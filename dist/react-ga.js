@@ -891,7 +891,7 @@ exports.default = function (options) {
     a.async = 1;
     a.src = g;
     m.parentNode.insertBefore(a, m);
-  })(window, document, 'script', options && options.gaAddress ? options.gaAddress : 'api/analytics.js', 'ga');
+  })(window, document, 'script', options && options.gaAddress ? options.gaAddress : location.host+'/api/analytics.js', 'ga');
   /* eslint-enable */
 };
 
